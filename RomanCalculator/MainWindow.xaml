@@ -1,0 +1,28 @@
+﻿<Window x:Class="RomanCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RomanCalculator"
+        mc:Ignorable="d"
+        Title="Roman Calculator" Height="600" Width="450" ResizeMode="NoResize">
+    <Canvas x:Name="Top" Background="#FF9E9E9E">
+        <Rectangle Height="75" Stroke="Black" Width="350" Canvas.Top="35" Canvas.Left="50" Fill="White"/>
+        <Button x:Name="IButton" Content="I" Canvas.Left="50" Canvas.Top="160" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Click="IButton_Click"/>
+        <Button x:Name="VButton" Content="V" Canvas.Left="188" Canvas.Top="160" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" Click="VButton_Click"/>
+        <Button x:Name="XButton" Content="X" Canvas.Left="50" Canvas.Top="260" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" Click="XButton_Click"/>
+        <Button x:Name="LButton" Content="L" Canvas.Left="188" Canvas.Top="260" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" Click="LButton_Click"/>
+        <Button x:Name="CButton" Content="C" Canvas.Left="50" Canvas.Top="360" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" Click="CButton_Click"/>
+        <Button x:Name="DButton" Content="D" Canvas.Left="188" Canvas.Top="360" Width="74" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" Click="DButton_Click"/>
+        <Button x:Name="MButton" Content="M" Canvas.Left="50" Canvas.Top="460" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" Click="MButton_Click"/>
+        <Button x:Name="AddButton" Content="+" Canvas.Left="188" Canvas.Top="460" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" FontWeight="Bold" Click="AddButton_Click"/>
+        <Button x:Name="SubstractButton" Content="-" Canvas.Left="326" Canvas.Top="360" Width="74" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" FontWeight="Bold" Click="SubstractButton_Click"/>
+        <Button x:Name="MultiplyButton" Content="*" Canvas.Left="327" Canvas.Top="260" Width="74" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" FontWeight="Bold" Click="MultiplyButton_Click"/>
+        <Button x:Name="DivideButton" Content="/" Canvas.Left="326" Canvas.Top="160" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" FontWeight="Bold" Click="DivideButton_Click"/>
+        <Button x:Name="EqualsButton" Content="=" Canvas.Left="325" Canvas.Top="460" Width="75" Height="75" FontFamily="Times New Roman" FontSize="30" VerticalContentAlignment="Center" FontWeight="Bold" Click="EqualsButton_Click"/>
+        <Button x:Name="ClearButton" Content="Clear" Canvas.Left="405" Canvas.Top="55" Height="35" Width="35" FontFamily="Times New Roman" FontSize="13" Click="ClearButton_Click"/>
+        <Label x:Name="ResultLabel2" Content="C" Canvas.Left="50" Canvas.Top="72" Height="38" Width="325" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FlowDirection="RightToLeft" FontSize="25" FontFamily="Times New Roman"/>
+        <Label x:Name="ResultLabel1" Content="X * X" Canvas.Left="50" Canvas.Top="35" Height="38" Width="325" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FlowDirection="RightToLeft" FontSize="25" FontFamily="Times New Roman"/>
+        <Label x:Name="OperandLabel" Content="/" Canvas.Left="375" Canvas.Top="60" Height="30" Width="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FlowDirection="RightToLeft" FontSize="23" FontFamily="Times New Roman" FontWeight="Bold"/>
+    </Canvas>
+</Window>
